@@ -70,7 +70,6 @@ const DivWrapperSubsection = () => {
   return (
     <section id="services" className="section-padding bg-gradient-to-br from-green-100 to-green-50 pt-32 pb-20">
       <div className="container-modern">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -96,7 +95,6 @@ const DivWrapperSubsection = () => {
           </p>
         </motion.div>
 
-        {/* Tab Navigation */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -130,7 +128,6 @@ const DivWrapperSubsection = () => {
           </div>
         </motion.div>
 
-        {/* Comparison Table */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -194,7 +191,6 @@ const DivWrapperSubsection = () => {
           </div>
         </motion.div>
 
-        {/* Key Insights */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -248,8 +244,7 @@ const DivWrapperSubsection = () => {
             </ul>
           </div>
         </motion.div>
-
-        {/* CTA */}
+      
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -32,16 +32,12 @@ export const HeroSubsection = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Overlay for better text visibility */}
       <div className="absolute inset-0 bg-black/70 z-0 pointer-events-none" />
-      {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden z-10">
-        {/* Floating Particles */}
         <div className="absolute top-20 left-10 w-2 h-2 bg-primary rounded-full animate-pulse opacity-60"></div>
         <div className="absolute top-40 right-20 w-1 h-1 bg-primary rounded-full animate-pulse opacity-40"></div>
         <div className="absolute bottom-40 left-1/4 w-1.5 h-1.5 bg-primary rounded-full animate-pulse opacity-50"></div>
         <div className="absolute bottom-20 right-1/3 w-1 h-1 bg-primary rounded-full animate-pulse opacity-30"></div>
-        {/* Gradient Orbs */}
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -53,10 +49,8 @@ export const HeroSubsection = () => {
           className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl"
         ></motion.div>
       </div>
-      {/* Main Content */}
       <div className="container-modern relative z-20">
         <div className="text-center space-y-8">
-          {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -68,7 +62,6 @@ export const HeroSubsection = () => {
               Pioneering Sustainable Innovation
             </span>
           </motion.div>
-          {/* Main Heading */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -87,7 +80,6 @@ export const HeroSubsection = () => {
               as tokenized credits, creating a sustainable future for generations to come.
             </p>
           </motion.div>
-          {/* Quote */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -101,7 +93,6 @@ export const HeroSubsection = () => {
               — Dr. Ranil Senanayake
             </cite>
           </motion.div>
-          {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -130,7 +121,6 @@ export const HeroSubsection = () => {
             </motion.button>
           </motion.div>
         </div>
-        {/* Stats Section */}
         <motion.div
           ref={statsRef}
           initial={{ opacity: 0, y: 40 }}
@@ -183,8 +173,7 @@ export const HeroSubsection = () => {
           <ArrowDownIcon className="w-5 h-5" />
         </motion.div>
       </motion.div>
-
-      {/* Parallax Background Image */}
+      
       <motion.div
         style={{ y }}
         className="absolute inset-0 -z-10"

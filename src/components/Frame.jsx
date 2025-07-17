@@ -49,7 +49,6 @@ const Frame = () => {
   return (
     <section id="governance" className="section-padding bg-gradient-to-br from-muted/30 to-background pt-32 pb-20">
       <div className="container-modern">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +74,6 @@ const Frame = () => {
           </p>
         </motion.div>
 
-        {/* ESG Pillars */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-16">
           {governancePillars.map((pillar, index) => (
             <motion.div
@@ -86,7 +84,6 @@ const Frame = () => {
               viewport={{ once: true }}
               className="card-modern group cursor-pointer bg-green-100 hover:bg-green-200 transition-colors duration-300"
             >
-              {/* Icon/Image */}
               <div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 bg-transparent">
                 {pillar.title === 'Environmental' && (
                   <img src="/Environment.png" alt="Environmental" className="w-16 h-16 object-contain" />
@@ -99,7 +96,6 @@ const Frame = () => {
                 )}
               </div>
 
-              {/* Content */}
               <h3 className="heading-3 text-black mb-3">
                 {pillar.title}
               </h3>
@@ -108,7 +104,6 @@ const Frame = () => {
                 {pillar.description}
               </p>
 
-              {/* Metrics */}
               <div className="space-y-2">
                 {pillar.metrics.map((metric, metricIndex) => (
                   <div key={metric} className="flex items-center space-x-2">
@@ -121,7 +116,6 @@ const Frame = () => {
           ))}
         </div>
 
-        {/* Impact Metrics */}
         <motion.div
           ref={containerRef}
           initial={{ opacity: 0, y: 40 }}
@@ -162,7 +156,6 @@ const Frame = () => {
           </div>
         </motion.div>
 
-        {/* Governance Process */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -252,8 +245,7 @@ const Frame = () => {
             </div>
           </div>
         </motion.div>
-
-        {/* CTA */}
+        
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

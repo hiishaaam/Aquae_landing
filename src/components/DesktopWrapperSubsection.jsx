@@ -81,7 +81,6 @@ const DesktopWrapperSubsection = () => {
   return (
     <section id="governance" className="section-padding bg-gradient-to-br from-background to-muted/30">
       <div className="container-modern">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -107,7 +106,6 @@ const DesktopWrapperSubsection = () => {
           </p>
         </motion.div>
 
-        {/* Governance Pillars */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {governancePillars.map((pillar, index) => (
             <motion.div
@@ -120,10 +118,8 @@ const DesktopWrapperSubsection = () => {
               className="group cursor-pointer"
             >
               <div className="card-modern h-full relative overflow-hidden">
-                {/* Background Gradient */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${pillar.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
                 
-                {/* Icon */}
                 <div className="relative z-10">
                   <div className={`w-16 h-16 bg-gradient-to-br ${pillar.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <pillar.icon className="w-8 h-8 text-white" />
@@ -137,7 +133,6 @@ const DesktopWrapperSubsection = () => {
                     {pillar.description}
                   </p>
                   
-                  {/* Features List */}
                   <ul className="space-y-3">
                     {pillar.features.map((feature, featureIndex) => (
                       <motion.li
@@ -155,14 +150,12 @@ const DesktopWrapperSubsection = () => {
                   </ul>
                 </div>
 
-                {/* Hover Effect */}
                 <div className="absolute inset-0 border-2 border-primary/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Impact Metrics */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -208,7 +201,6 @@ const DesktopWrapperSubsection = () => {
           </div>
         </motion.div>
 
-        {/* Innovation Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -216,7 +208,6 @@ const DesktopWrapperSubsection = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
         >
-          {/* Content */}
           <div>
             <div className="inline-flex items-center space-x-2 glass-nav px-4 py-2 rounded-full mb-6">
               <LightBulbIcon className="w-4 h-4 text-primary" />
@@ -263,8 +254,7 @@ const DesktopWrapperSubsection = () => {
               Learn About Our Technology
             </motion.button>
           </div>
-
-          {/* Visual Element */}
+      
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

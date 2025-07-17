@@ -54,7 +54,6 @@ const OverlapWrapperSubsection = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000));
     
     setIsSubmitting(false);
@@ -75,7 +74,6 @@ const OverlapWrapperSubsection = () => {
   return (
     <section id="contact" className="section-padding bg-gradient-to-br from-primary/5 to-background pt-32 pb-20">
       <div className="container-modern">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -102,7 +100,6 @@ const OverlapWrapperSubsection = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12 items-start">
-          {/* Contact Information */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -120,7 +117,6 @@ const OverlapWrapperSubsection = () => {
               </p>
             </div>
 
-            {/* Contact Cards */}
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <motion.div
@@ -151,7 +147,6 @@ const OverlapWrapperSubsection = () => {
               ))}
             </div>
 
-            {/* Additional Info */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -179,7 +174,6 @@ const OverlapWrapperSubsection = () => {
             </motion.div>
           </motion.div>
 
-          {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -192,7 +186,6 @@ const OverlapWrapperSubsection = () => {
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name Fields */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-foreground/80 mb-2">
@@ -233,7 +226,6 @@ const OverlapWrapperSubsection = () => {
                 </div>
               </div>
 
-              {/* Email Field */}
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-foreground/80 mb-2">
                   Email Address
@@ -253,7 +245,6 @@ const OverlapWrapperSubsection = () => {
                 </div>
               </div>
 
-              {/* Message Field */}
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-foreground/80 mb-2">
                   Message
@@ -273,7 +264,6 @@ const OverlapWrapperSubsection = () => {
                 </div>
               </div>
 
-              {/* Submit Button */}
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
@@ -302,7 +292,6 @@ const OverlapWrapperSubsection = () => {
               </motion.button>
             </form>
 
-            {/* Success Message */}
             <AnimatePresence>
               {isSubmitted && (
                 <motion.div

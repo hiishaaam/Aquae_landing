@@ -43,7 +43,6 @@ const DesktopSubsection = () => {
   return (
     <section id="about" className="section-padding bg-gradient-to-br from-muted/50 to-background pt-32 pb-20">
       <div className="container-modern">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,7 +69,6 @@ const DesktopSubsection = () => {
           </p>
         </motion.div>
 
-        {/* SDG Goals Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4 md:gap-6 lg:gap-8">
           {sdgGoals.map((goal, index) => (
             <motion.div
@@ -92,36 +90,30 @@ const DesktopSubsection = () => {
               className="group cursor-pointer"
             >
               <div className="relative overflow-hidden rounded-2xl">
-                {/* Image */}
                 <img 
                   src={goal.image} 
                   alt={`SDG Goal ${goal.id}: ${goal.title}`}
                   className="w-full h-full object-cover"
                 />
                 
-                {/* Overlay with Content - Only visible on hover */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300">
                   <div className="relative z-10 h-full flex flex-col items-center justify-center text-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    {/* Goal Number */}
                     <div className="text-2xl md:text-3xl font-bold text-white mb-2 drop-shadow-lg">
                       {goal.id}
                     </div>
                     
-                    {/* Goal Title */}
                     <div className="text-xs md:text-sm font-medium text-white/90 leading-tight drop-shadow-lg">
                       {goal.title}
                     </div>
                   </div>
                 </div>
 
-                {/* Hover Effect */}
                 <div className="absolute inset-0 border-2 border-primary/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Impact Stats */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -172,8 +164,7 @@ const DesktopSubsection = () => {
             </motion.div>
           ))}
         </motion.div>
-
-        {/* CTA Section */}
+              
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

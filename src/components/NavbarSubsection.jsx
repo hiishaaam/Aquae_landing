@@ -62,7 +62,6 @@ const NavbarSubsection = () => {
 
   return (
     <>
-      {/* Sticky Navbar */}
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -74,7 +73,6 @@ const NavbarSubsection = () => {
       >
         <div className="container-modern">
           <div className="flex items-center justify-between h-20 px-4 sm:px-6 lg:px-8">
-            {/* Logo */}
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-3"
@@ -87,7 +85,6 @@ const NavbarSubsection = () => {
               <span className="text-xl font-bold gradient-text">AQUAE.Impact</span>
             </motion.div>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {navigationItems.map((item, index) => (
                 <motion.a
@@ -104,9 +101,7 @@ const NavbarSubsection = () => {
               ))}
             </div>
 
-            {/* Right Side Actions */}
             <div className="flex items-center space-x-4">
-              {/* Dark Mode Toggle */}
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -121,7 +116,6 @@ const NavbarSubsection = () => {
                 )}
               </motion.button>
 
-              {/* CTA Button */}
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -130,7 +124,6 @@ const NavbarSubsection = () => {
                 Green Credits
               </motion.button>
 
-              {/* Mobile Menu Button */}
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -148,7 +141,6 @@ const NavbarSubsection = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
@@ -185,7 +177,6 @@ const NavbarSubsection = () => {
         </AnimatePresence>
       </motion.nav>
 
-      {/* Spacer to prevent content from hiding under fixed navbar */}
       <div className="h-20"></div>
     </>
   );

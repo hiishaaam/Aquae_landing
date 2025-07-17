@@ -49,10 +49,8 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100 border-t border-border/50 pt-20 pb-8">
       <div className="container-modern">
-        {/* Main Footer Content */}
         <div className="pb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {/* Brand Section */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +72,6 @@ const Footer = () => {
                 environmental impact solutions for a better tomorrow.
               </p>
 
-              {/* Contact Info */}
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-black">
                   <EnvelopeIcon className="w-4 h-4" />
@@ -90,7 +87,6 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Social Links */}
               <div className="flex space-x-4 mt-6">
                 {socialLinks.map((social, index) => (
                   <motion.a
@@ -110,7 +106,6 @@ const Footer = () => {
               </div>
             </motion.div>
 
-            {/* Company Links */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +133,6 @@ const Footer = () => {
               </ul>
             </motion.div>
 
-            {/* Services Links */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -166,7 +160,6 @@ const Footer = () => {
               </ul>
             </motion.div>
 
-            {/* Resources & Legal */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -221,7 +214,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -252,8 +244,7 @@ const Footer = () => {
             </div>
           </div>
         </motion.div>
-
-        {/* Bottom Bar */}
+        
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
