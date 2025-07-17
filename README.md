@@ -1,12 +1,33 @@
-# React + Vite
+# AquaeImpact Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi! I'm an intern who is learning to code, and this is the landing page project I worked on called **AquaeImpact**. This project is built using **React** and **Vite**. It's my first experience working with modern web development tools, and I learned a lot while building it!
 
-Currently, two official plugins are available:
+## About the Project
+AquaeImpact is a landing page designed to showcase information about water impact and environmental awareness. The page includes sections like a hero banner, information cards, a navbar, a footer, and some cool images and graphics. I used React components to organize the different parts of the page, and Tailwind CSS for styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What I Learned
+- How to set up a React project using Vite
+- How to use components in React to build reusable UI pieces
+- How to style a website using Tailwind CSS
+- How to manage project files and assets
+- How to use git for version control
 
-## Expanding the ESLint configuration
+## How to Run the Project
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Start the development server with `npm run dev`
+4. Open your browser to the local server address (usually `http://localhost:5173`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Folder Structure
+- `src/components/` - Contains all the React components for the landing page
+- `public/` - Images and static assets
+- `App.jsx` - Main app file
+- `index.html` - The HTML template
+
+## Acknowledgements
+- Thanks to my mentors and teammates for helping me learn!
+- This project uses open source tools like React, Vite, and Tailwind CSS.
+
+---
+
+I'm excited to keep learning and improving my coding skills! :)
