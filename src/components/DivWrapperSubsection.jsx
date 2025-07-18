@@ -114,7 +114,7 @@ const DivWrapperSubsection = () => {
                   className={`flex items-center space-x-2 px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
                     activeTab === tab.id
                       ? 'bg-primary text-primary-foreground shadow-lg'
-                      : 'text-foreground/70 hover:text-foreground hover:bg-muted/50'
+                      : 'text-black hover:text-black hover:bg-muted/50'
                   }`}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
