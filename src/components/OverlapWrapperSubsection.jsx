@@ -21,13 +21,13 @@ const contactInfo = [
   {
     icon: PhoneIcon,
     title: "Phone",
-    value: "+1 (555) 123-4567",
+    value: "+91 XXXXXXXXXX",
     description: "Call us directly"
   },
   {
     icon: MapPinIcon,
     title: "Office",
-    value: "San Francisco, CA",
+    value: "KERALA",
     description: "Visit our headquarters"
   }
 ];

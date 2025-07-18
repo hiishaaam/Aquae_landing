@@ -129,7 +129,7 @@ export const HeroSubsection = () => {
           className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12"
         >
           {[
-            { icon: StarIcon, value: "1M+", label: "Credits Generated", description: "Sustainable impact credits" },
+            { icon: StarIcon, value: "23M+", label: "Credits Generated", description: "In Biomass , Biodiversity and Ecosystem Services" },
             { icon: GlobeAltIcon, value: "50+", label: "Countries", description: "Global biodiversity projects" },
             { icon: SparklesIcon, value: "99%", label: "Success Rate", description: "Verified impact delivery" }
           ].map((stat, index) => (
