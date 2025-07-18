@@ -36,7 +36,7 @@ const governancePillars = [
 ];
 
 const impactMetrics = [
-  { label: "Credits Generated", value: "1.2M+", icon: StarIcon },
+  { label: "Credits Generated", value: "23M+", icon: StarIcon },
   { label: "Projects Supported", value: "150+", icon: GlobeAltIcon },
   { label: "Communities Impacted", value: "25K+", icon: UsersIcon },
   { label: "Carbon Offset", value: "500K+ tCO2e", icon: BoltIcon }
@@ -82,7 +82,7 @@ const Frame = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="card-modern group cursor-pointer bg-green-100 hover:bg-green-200 transition-colors duration-300"
+              className="card-modern group cursor-pointer bg-primary/20 hover:bg-primary/30 transition-colors duration-300"
             >
               <div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 bg-transparent">
                 {pillar.title === 'Environmental' && (
@@ -107,7 +107,7 @@ const Frame = () => {
               <div className="space-y-2">
                 {pillar.metrics.map((metric, metricIndex) => (
                   <div key={metric} className="flex items-center space-x-2">
-                    <div className={`w-2 h-2 bg-gradient-to-r ${pillar.color} rounded-full`} />
+                    <div className={`w-2 h-2 gradient-primary-deep rounded-full`} />
                     <span className="text-sm text-black">{metric}</span>
                   </div>
                 ))}

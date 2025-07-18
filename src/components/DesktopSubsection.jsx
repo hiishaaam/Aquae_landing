@@ -22,7 +22,7 @@ import {
 const sdgGoals = [
   { id: 1, title: "No Poverty", icon: HeartIcon, color: "from-red-500 to-red-600", image: "/img1.jpeg" },
   { id: 2, title: "Zero Hunger", icon: AcademicCapIcon, color: "from-orange-500 to-orange-600", image: "/img2.jpeg" },
-  { id: 3, title: "Good Health", icon: ShieldCheckIcon, color: "from-green-500 to-green-600", image: "/img3.jpeg" },
+  { id: 3, title: "Good Health", icon: ShieldCheckIcon, color: "gradient-primary-deep", image: "/img3.jpeg" },
   { id: 4, title: "Quality Education", icon: AcademicCapIcon, color: "from-red-500 to-red-600", image: "/img4.jpeg" },
   { id: 5, title: "Gender Equality", icon: UserGroupIcon, color: "from-orange-500 to-orange-600", image: "/img5.jpeg" },
   { id: 6, title: "Clean Water", icon: SunIcon, color: "from-blue-500 to-blue-600", image: "/img6.jpeg" },
@@ -32,9 +32,9 @@ const sdgGoals = [
   { id: 10, title: "Reduced Inequalities", icon: UserGroupIcon, color: "from-red-500 to-red-600", image: "/img10.jpeg" },
   { id: 11, title: "Sustainable Cities", icon: BuildingOfficeIcon, color: "from-orange-500 to-orange-600", image: "/img11.jpeg" },
   { id: 12, title: "Responsible Consumption", icon: CogIcon, color: "from-orange-500 to-orange-600", image: "/img12.jpeg" },
-  { id: 13, title: "Climate Action", icon: CloudIcon, color: "from-green-500 to-green-600", image: "/img13.jpeg" },
+  { id: 13, title: "Climate Action", icon: CloudIcon, color: "gradient-primary-deep", image: "/img13.jpeg" },
   { id: 14, title: "Life Below Water", icon: SunIcon, color: "from-blue-500 to-blue-600", image: "/img14.jpeg" },
-  { id: 15, title: "Life on Land", icon: StarIcon, color: "from-green-500 to-green-600", image: "/img15.jpeg" },
+  { id: 15, title: "Life on Land", icon: StarIcon, color: "gradient-primary-deep", image: "/img15.jpeg" },
   { id: 16, title: "Peace & Justice", icon: ShieldCheckIcon, color: "from-blue-500 to-blue-600", image: "/img16.jpeg" },
   { id: 17, title: "Partnerships", icon: HandRaisedIcon, color: "from-blue-500 to-blue-600", image: "/img17.jpeg" }
 ];
@@ -149,7 +149,7 @@ const DesktopSubsection = () => {
               viewport={{ once: true }}
               className="card-modern text-center group"
             >
-              <div className="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+              <div className={`w-16 h-16 gradient-primary-deep rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform`}>
                 <stat.icon className="w-8 h-8 text-primary-foreground" />
               </div>
               <div className="text-4xl font-bold text-gradient-primary mb-3">

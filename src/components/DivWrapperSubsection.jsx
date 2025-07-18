@@ -68,7 +68,7 @@ const DivWrapperSubsection = () => {
   const [activeTab, setActiveTab] = useState('biodiversity');
 
   return (
-    <section id="services" className="section-padding bg-gradient-to-br from-green-100 to-green-50 pt-32 pb-20">
+    <section id="services" className="section-padding pt-32 pb-20" style={{ backgroundColor: '#E6F4EE' }}>
       <div className="container-modern">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

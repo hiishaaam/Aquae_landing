@@ -118,10 +118,10 @@ const DesktopWrapperSubsection = () => {
               className="group cursor-pointer"
             >
               <div className="card-modern h-full relative overflow-hidden">
-                <div className={`absolute inset-0 bg-gradient-to-br ${pillar.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
+                <div className={`absolute inset-0 gradient-primary-deep opacity-0 group-hover:opacity-5 transition-opacity duration-500`} />
                 
                 <div className="relative z-10">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${pillar.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`w-16 h-16 gradient-primary-deep rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <pillar.icon className="w-8 h-8 text-white" />
                   </div>
                   
@@ -143,7 +143,7 @@ const DesktopWrapperSubsection = () => {
                         viewport={{ once: true }}
                         className="flex items-center space-x-2 text-foreground/70"
                       >
-                        <div className={`w-2 h-2 bg-gradient-to-r ${pillar.color} rounded-full flex-shrink-0`} />
+                        <div className={`w-2 h-2 gradient-primary-deep rounded-full flex-shrink-0`} />
                         <span className="text-sm">{feature}</span>
                       </motion.li>
                     ))}
