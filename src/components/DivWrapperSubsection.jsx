@@ -266,7 +266,7 @@ const DivWrapperSubsection = () => {
                 whileTap={{ scale: 0.95 }}
                 className="btn-primary"
               >
-                Explore Biodiversity Credits
+                Conservation Credits of Biomass , Biodiversity and Ecosystem Services
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
