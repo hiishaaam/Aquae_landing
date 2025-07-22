@@ -77,7 +77,7 @@ export const HeroSubsection = () => {
             </h1>
             <p className="body-large text-white/80 max-w-4xl lg:max-w-5xl mx-auto">
               We invite you to join us to realize the value of this biodiversity 
-              as tokenized credits, creating a sustainable future for generations to come.
+              as fractionalized credits, creating a sustainable future for generations to come.
             </p>
           </motion.div>
           <motion.div
